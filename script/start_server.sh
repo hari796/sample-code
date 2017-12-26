@@ -1,1 +1,1 @@
-sudo  servic apache2 start 
+servic apache2 start 
