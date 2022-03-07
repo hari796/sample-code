@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: script/index.html
-    destination: /var/www/html
+    destination: /tmp
     overwrite: true
 hooks:
   BeforeInstall:
