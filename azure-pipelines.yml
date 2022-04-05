@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: aws_ec2
 
 steps:
 - script: echo Hello, world!
