@@ -2,7 +2,7 @@
 version: 0.0
 os: linux
 files:
-  - source: script/index.html
+  - source: .
     destination: /tmp
     overwrite: true
 hooks:
