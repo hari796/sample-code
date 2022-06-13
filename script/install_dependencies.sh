@@ -1,1 +1,1 @@
-apt-get update
+yum update -y
