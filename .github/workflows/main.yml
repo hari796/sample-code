@@ -12,11 +12,11 @@ jobs:
       - name: AWS CodeDeploy
         uses: sourcetoad/aws-codedeploy-action@v1
         with:
-          aws-access-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-south-1
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: ap-south-1
           codedeploy_name: web_app
           codedeploy_group: web_app_deploymet_group
           codedeploy_register_only: true
           max_polling_iterations: 60
-          directory: tmp
+          directory: ./
