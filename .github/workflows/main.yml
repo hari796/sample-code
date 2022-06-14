@@ -19,3 +19,4 @@ jobs:
           codedeploy_group: web_app_deploymet_group
           codedeploy_register_only: true
           max_polling_iterations: 60
+          directory: $pwd
