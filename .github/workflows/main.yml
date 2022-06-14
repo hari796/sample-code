@@ -21,3 +21,4 @@ jobs:
           s3_folder: artifacts
           codedeploy_register_only: true
           max_polling_iterations: 60
+          archive: prod-backend-20220202.zip
