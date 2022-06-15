@@ -9,7 +9,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Setup Symfony
-        working-directory: ./scripts
+        working-directory: .
         run: |
           pwd
           ls -l /home/runner/work/sample-code/
