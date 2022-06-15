@@ -9,12 +9,13 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Setup Symfony
+        working-directory: ./scripts
         run: |
           pwd
           ls -l /home/runner/work/sample-code/
      # Step 1
       - name: AWS CodeDeploy
-        uses: sourcetoad/aws-codedeploy-action@v2
+        uses: sourcetoad/aws-codedeploy-action@v1
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -25,5 +26,3 @@ jobs:
           s3_folder: artifacts
           codedeploy_register_only: true
           max_polling_iterations: 60
-          directory: ./
-        
