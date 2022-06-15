@@ -8,11 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
-      - name: Setup Symfony
-        working-directory: .
-        run: |
-          pwd
-          ls -l /home/runner/work/sample-code/
      # Step 1
       - name: AWS CodeDeploy
         uses: sourcetoad/aws-codedeploy-action@v1
