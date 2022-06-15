@@ -10,3 +10,4 @@ jobs:
       - name: Setup Symfony
         run: |
           pwd
+          ls -la
