@@ -11,7 +11,7 @@ jobs:
       - name: Setup Symfony
         run: |
           pwd
-          ls -l
+          ls -l /home/runner/work/sample-code/
      # Step 1
       - name: AWS CodeDeploy
         uses: sourcetoad/aws-codedeploy-action@v1
