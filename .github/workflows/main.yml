@@ -11,6 +11,10 @@ jobs:
      # Step 1
       - name: code checkout
         uses: actions/checkout@v2
+      - name: Setup Symfony
+        run: |
+          pwd
+          ls -la
       - name: AWS CodeDeploy
         uses: sourcetoad/aws-codedeploy-action@v1
         with:
