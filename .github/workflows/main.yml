@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
+      - name: Setup Symfony
+        run: |
+          pwd
+          ls -l
      # Step 1
       - name: AWS CodeDeploy
         uses: sourcetoad/aws-codedeploy-action@v1
@@ -22,7 +26,4 @@ jobs:
           codedeploy_register_only: true
           max_polling_iterations: 60
           directory: ./
-      - name: Setup Symfony
-        run: |
-          pwd
-          ls -l
+        
