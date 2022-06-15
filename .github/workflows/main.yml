@@ -9,6 +9,8 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
      # Step 1
+      - name: code checkout
+        uses: actions/checkout@v2
       - name: AWS CodeDeploy
         uses: sourcetoad/aws-codedeploy-action@v1
         with:
